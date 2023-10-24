@@ -1,12 +1,9 @@
 import "./App.css";
 import ButtonIcon from "./components/ButtonIcon";
-import ButtonText from "./components/ButtonText";
 import Input from "./components/Input";
 import Item from "./components/Item";
-import Text from "./components/Text";
 import Title from "./components/Title";
-// import AddIcon from '@mui/icons-material/Add';
-// import Vinh from "./components/Vinh";
+import Footer from "./containers/Footer";
 
 const itemContent: string[] = [
   "Buy a new gaming laptop",
@@ -38,10 +35,7 @@ function App() {
       <Item label="Do exercise" hiKhoa={123}></Item> */}
 
       {/* Footer */}
-      <div style={{ display: "flex" }}>
-        <Text></Text>
-        <ButtonText></ButtonText>
-      </div>
+     <Footer />
     </div>
   );
 }
