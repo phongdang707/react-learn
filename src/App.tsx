@@ -1,41 +1,51 @@
 import "./App.css";
-import ButtonIcon from "./components/ButtonIcon";
-import Input from "./components/Input";
-import Item from "./components/Item";
-import Title from "./components/Title";
-import Footer from "./containers/Footer";
+import Child1 from "./components/Child1/Child1";
+import List from "./containers/List";
 
-const itemContent: string[] = [
-  "Buy a new gaming laptop",
-  "Complete task",
-  "Swim",
-  "Do exercise",
+const arrayItem = [
+  // {
+  //   title: "Thoi trang nam",
+  //   avatar:
+  //     "https://cdn.tgdd.vn/Products/Images/42/213031/iphone-12-tim-1-600x600.jpg",
+  // },
+  {
+    title: "Thiet bi dien tu",
+    avatar:
+      "https://cdn.tgdd.vn/Products/Images/42/213031/iphone-12-tim-1-600x600.jpg",
+  },
+  // {
+  //   title: "Nhà Sách Online",
+  //   avatar:
+  //     "https://down-vn.img.susercontent.com/file/36013311815c55d303b0e6c62d6a8139_tn",
+  // },
+  {
+    title: "Sức Khỏe",
+    avatar:
+      "https://down-vn.img.susercontent.com/file/49119e891a44fa135f5f6f5fd4cfc747_tn",
+  },
 ];
 
 function App() {
   return (
-    <div className="todo">
-      {/* <Vinh /> */}
-      <Title></Title>
+    <div style={{ display: "flex" }}>
+      <List listAhihi={arrayItem}></List>
 
-      {/* Input Search */}
-      <div className="container-search">
-        <Input></Input>
-        <ButtonIcon></ButtonIcon>
-      </div>
+      {/* lv1 */}
+      {/* <Child1
+        title="123"
+        avatar="123"
+      />
+      <Child1
+        title="456"
+        avatar="456"
+      />
+     */}
 
-      {itemContent.map((each) => {
-        return <Item label={each} />;
-      })}
-
-      {/* Content */}
-      {/* <Item label="Buy a new gaming laptop" hiKhoa={123}></Item>
-      <Item label="Complete task" hiKhoa={123}></Item>
-      <Item label="Swim" hiKhoa={123}></Item>
-      <Item label="Do exercise" hiKhoa={123}></Item> */}
-
-      {/* Footer */}
-     <Footer />
+      {/* lv0 */}
+      {/* <Child1 />
+      <Child2 />
+      <Child3 />
+      <Child4 /> */}
     </div>
   );
 }
