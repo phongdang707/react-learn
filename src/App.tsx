@@ -28,7 +28,7 @@ const arrayItem = [
 function App() {
   return (
     <div style={{ display: "flex" }}>
-      <List listAhihi={arrayItem}></List>
+      {/* <List listAhihi={arrayItem}></List> */}
 
       {/* lv1 */}
       {/* <Child1
